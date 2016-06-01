@@ -344,8 +344,8 @@ void ABGame() {
 		case ABGameStart:
 			send[0] = GAME_START;
 			
-			transmit_payload(send);
 			reset();
+			transmit_payload(send);
 		break;
 		
 		case ABGameVoting:
